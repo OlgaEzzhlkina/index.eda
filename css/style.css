@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -87,4 +89,154 @@ body {
   display: block;
   padding: 5px;
   border-radius: 50%;
+}
+
+.slide {
+  border-radius: 20px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  padding: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.43) 40.45%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.slide-text-light {
+  background: gray;
+  color: #fff;
+}
+
+.slide-summer {
+  background: url("../img/summer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-content {
+  max-width: 400px;
+  position: relative;
+}
+
+.slide-title {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 51px;
+  margin-bottom: 15px;
+}
+
+.slide-text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 30px;
+}
+
+.button {
+  border-radius: 25px;
+  padding: 12px 50px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.button-default {
+  color: #5f5f61;
+  background: #fff;
+}
+
+.button-primary {
+  background: #f47322;
+  color: #fff;
+}
+
+.promo {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 32px;
+  width: 570px;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+.card-text-light {
+  color: #fff;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  margin-bottom: 21px;
+}
+
+.card-description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  max-width: 168px;
+}
+
+.card-price {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  display: block;
+}
+
+.card-delivery {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 25px;
+}
+
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
