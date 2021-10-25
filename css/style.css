@@ -128,9 +128,36 @@ body {
   background-size: cover;
 }
 
+.slide-autumn {
+  background: url("../img/autumn.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-vitamins {
+  background: url("../img/vitamins.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .slide-content {
   max-width: 400px;
   position: relative;
+}
+
+.slider-buttons {
+  position: absolute;
+  right: 46px;
+  bottom: 40px;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
+}
+
+.slider-button {
+  cursor: pointer;
 }
 
 .slide-title {
@@ -503,4 +530,158 @@ body {
 .social-link {
   margin-left: 20px;
   text-decoration: none;
+}
+
+/* Media */
+@media (max-width: 1260px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .search-form {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .tabs-content {
+    flex-wrap: wrap;
+  }
+
+  .tabs-card {
+    flex: 50%;
+    max-width: calc(50% - 36px);
+  }
+
+  .advantage-cards {
+    flex-wrap: wrap;
+  }
+
+  .advantage-card {
+    max-width: calc(50% - 36px);
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+
+  .slide {
+    padding: 60px;
+  }
+
+  .slide-title {
+    font-size: 40px;
+  }
+
+  .delivery-card {
+    width: calc(50% - 30px);
+  }
+
+  .advantage {
+    padding: 40px 0;
+  }
+
+  .footer-logo {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 560px;
+  }
+
+  .header-container {
+    flex-wrap: wrap;
+  }
+
+  .search-form {
+    order: 5;
+    margin: 15px 3px;
+  }
+
+  .promo {
+    flex-wrap: wrap;
+  }
+
+  .delivery-week {
+    padding: 30px 0;
+  }
+
+  .delivery-cards {
+    margin-top: 25px;
+  }
+
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer-logo {
+    width: 120px;
+  }
+
+  .footer-link {
+    font-size: 12px;
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .slide-title {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .button {
+    padding: 12px 19px;
+    line-height: 17px;
+  }
+
+  .slider-buttons {
+    right: 35%;
+    bottom: 15px;
+  }
+
+  .section-title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .delivery-card {
+    width: 100%;
+  }
+
+  .tabs-card {
+    max-width: 100%;
+  }
+
+  .advantage-card {
+    max-width: 100%;
+  }
+
+  .footer {
+    padding: 10px 0;
+  }
+
+  .footer-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .footer-logo {
+    width: 80px;
+  }
+
+  .footer-nav {
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  .social-links {
+    margin: auto;
+  }
 }
