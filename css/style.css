@@ -632,6 +632,10 @@ body {
     max-width: 90%;
   }
 
+  .slide {
+    padding: 30px;
+  }
+
   .slide-title {
     font-size: 30px;
     line-height: 32px;
@@ -640,6 +644,7 @@ body {
   .button {
     padding: 12px 19px;
     line-height: 17px;
+    font-size: 12px;
   }
 
   .slider-buttons {
@@ -677,11 +682,15 @@ body {
   }
 
   .footer-nav {
-    display: flex;
-    margin-bottom: 15px;
+    margin-left: auto;
+  }
+
+  .footer-link {
+    margin-right: 0;
   }
 
   .social-links {
     margin: auto;
+    margin-top: 15px;
   }
 }
